@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "885560551893",
+    "project_id": "smartcloset-a6a3f",
+    "storage_bucket": "smartcloset-a6a3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885560551893:android:229c4420d545253d92355c",
+        "android_client_info": {
+          "package_name": "com.example.smartclosetclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885560551893-5d0ktec5d1odrvq31bnt092tpad91kvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartclosetclient",
+            "certificate_hash": "1c1e5362a28fc3e4401ea580a249ddcbb858d4ff"
+          }
+        },
+        {
+          "client_id": "885560551893-auokh724eqspovpg1k5p207pk19r2sdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe7iMXal1xNo0aUYG6ONGIodJv0gpAfdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885560551893-auokh724eqspovpg1k5p207pk19r2sdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,185 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedCategoryActivity">
+
+
+    <LinearLayout
+        android:id="@+id/viewA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/neon_pink"
+            app:title="Detail Category"
+            app:titleMarginStart="30dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardItem"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/create" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Category Id"
+            android:textColor="@color/neon_pink"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="category"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Category name"
+            android:textColor="@color/neon_pink"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nameCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Sub Category"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Sub Category"
+            android:textColor="@color/neon_pink"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/pink_border">
+            <Spinner
+                android:id="@+id/spSubCategory"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:gravity="start|center_vertical"
+                />
+        </RelativeLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/menu_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/neon_pink"
+            android:text="Actions"
+            app:icon="@drawable/baseline_menu_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddSubCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/teal_200"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/menu_fab"
+        app:layout_constraintEnd_toEndOf="@+id/menu_fab"
+        app:srcCompat="@drawable/add" />
+    <TextView
+        android:id="@+id/add_subcategory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Add SubCategory"
+        app:layout_constraintBottom_toBottomOf="@+id/fabAddSubCategory"
+        app:layout_constraintEnd_toStartOf="@+id/fabAddSubCategory"
+        app:layout_constraintTop_toTopOf="@+id/fabAddSubCategory" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDeleteCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/red"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fabAddSubCategory"
+        app:layout_constraintEnd_toEndOf="@+id/fabAddSubCategory"
+        app:layout_constraintStart_toStartOf="@+id/fabAddSubCategory"
+        app:srcCompat="@drawable/baseline_delete_24" />
+    <TextView
+        android:id="@+id/delete_subcategory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Delete Category"
+        app:layout_constraintBottom_toBottomOf="@+id/fabDeleteCategory"
+        app:layout_constraintEnd_toStartOf="@+id/fabDeleteCategory"
+        app:layout_constraintTop_toTopOf="@+id/fabDeleteCategory" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUpdateCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/green"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toStartOf="@+id/menu_fab"
+        app:layout_constraintTop_toTopOf="@+id/menu_fab"
+        app:srcCompat="@drawable/baseline_edit_24" />
+    <TextView
+        android:id="@+id/update_category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Update Category"
+        app:layout_constraintBottom_toBottomOf="@+id/fabUpdateCategory"
+        app:layout_constraintTop_toTopOf="@+id/fabUpdateCategory"
+        app:layout_constraintEnd_toStartOf="@+id/fabUpdateCategory" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
