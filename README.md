@@ -6,8 +6,8 @@ The software for the project is a mobile application called "Smart Closet," whic
  - Develop app by Android Java
 ## Features 
 
-1. Login
-  ![image](https://github.com/duyendumy/SmartCloset/assets/119155923/dced111a-80cb-43e1-a5eb-4a0c4c13685c)
+- Login
+  ![image](https://github.com/duyendumy/SmartCloset/assets/119155923/dced111a-80cb-43e1-a5eb-4a0c4c13685c =200x400)
   ![image](https://github.com/duyendumy/SmartCloset/assets/119155923/5aa654ac-2068-4cb5-b626-d1eb7babd8da)
   
 - Sign up
