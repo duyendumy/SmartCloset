@@ -35,7 +35,6 @@ The software for the project is a mobile application called "Smart Closet," whic
   
 - Add outfits
   ![image](https://github.com/duyendumy/SmartCloset/assets/119155923/d63deae0-8499-48ba-b911-4e648bb64911)
-  ![image](https://github.com/duyendumy/SmartCloset/assets/119155923/c0c21843-5a38-4972-83ce-779db5456923)
   ![image](https://github.com/duyendumy/SmartCloset/assets/119155923/8806acc8-49ac-4190-9472-c0476486635d)
   
 - List of schedule
